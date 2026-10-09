@@ -1,0 +1,356 @@
+/* ============================================================
+   NeuroShell — Responsive Breakpoints (Desktop → Mobile)
+   ============================================================ */
+
+/* ---------- Large Screen / Small Desktop (max-width: 1200px) ---------- */
+@media (max-width: 1200px) {
+  .container {
+    padding-inline: 1.75rem;
+  }
+}
+
+/* ---------- Desktop Adjustments (max-width: 1100px) ---------- */
+@media (max-width: 1100px) {
+  .hero-title {
+    font-size: 2.75rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .components-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-avatars-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  /* Let the pipeline wrap instead of causing inner horizontal scroll */
+  .pipeline-diagram {
+    flex-wrap: wrap;
+  }
+
+  .pipeline-loopback {
+    width: 80%;
+  }
+
+  /* Header search field does not fit alongside the full nav */
+  .search {
+    display: none;
+  }
+}
+
+/* ---------- Collapse Navigation (max-width: 1024px) ---------- */
+@media (max-width: 1024px) {
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-slate-200);
+    padding: 1.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-120%);
+    transition: transform 0.3s ease;
+    max-height: calc(100vh - var(--header-height));
+    overflow-y: auto;
+  }
+
+  .nav.is-open {
+    transform: translateY(0);
+  }
+
+  .nav__list {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+
+  .nav__link {
+    text-align: center;
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius-md);
+  }
+}
+
+/* ---------- Tablet Landscape (max-width: 980px) ---------- */
+@media (max-width: 980px) {
+  /* Decorative circuit traces overlap content on smaller screens */
+  .hero-circuit-left,
+  .hero-circuit-right {
+    display: none;
+  }
+
+  .stat-card {
+    padding: 1.5rem;
+  }
+
+  .stat-value {
+    font-size: 2.25rem;
+  }
+
+  .progress-grid {
+    gap: 1.5rem 2rem;
+  }
+
+  .diagram {
+    padding: var(--space-5);
+  }
+}
+
+/* ---------- Tablet (max-width: 880px) ---------- */
+@media (max-width: 880px) {
+  .hero-section .hero__inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .overview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .progress-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .grid--3,
+  .grid--4 {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .subnav-bar-wrapper {
+    padding-block: 0.75rem;
+  }
+
+  .subnav-pill {
+    max-width: calc(100% - 2rem);
+    padding: 5px 10px 5px 16px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    flex-wrap: nowrap;
+  }
+
+  .subnav-pill::-webkit-scrollbar {
+    display: none;
+  }
+
+  .subnav-links {
+    flex-wrap: nowrap;
+  }
+
+  .subnav-link {
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+  }
+}
+
+/* ---------- Tablet / Large Phone (max-width: 768px) ---------- */
+@media (max-width: 768px) {
+  .grid--2,
+  .form__row--split {
+    grid-template-columns: 1fr;
+  }
+
+  .overview-card {
+    padding: 1.75rem;
+  }
+
+  .meet-team-section .team-header {
+    align-items: flex-start;
+  }
+
+  .footer__grid {
+    gap: 1.75rem 2rem;
+  }
+}
+
+/* ---------- Mobile (max-width: 580px) ---------- */
+@media (max-width: 580px) {
+  .container {
+    padding-inline: 1.25rem;
+  }
+
+  .brand-text {
+    font-size: 1.05rem;
+  }
+
+  .hero-section {
+    padding-block: 3rem 3.25rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.05rem;
+  }
+
+  .hero-lead {
+    margin-bottom: 1.5rem;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .section {
+    padding-block: 2.5rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .section-subtitle {
+    margin-bottom: 1.75rem;
+  }
+
+  .overview-card {
+    padding: 1.5rem;
+  }
+
+  .stat-card {
+    padding: 1.25rem;
+  }
+
+  .stat-value {
+    font-size: 2rem;
+  }
+
+  .terminal-box {
+    padding: 12px 14px;
+    font-size: 0.8125rem;
+  }
+
+  .prompt-text,
+  .result-command {
+    font-size: 0.8125rem;
+  }
+
+  .pill-badge {
+    padding: 5px 14px;
+  }
+
+  .components-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-avatars-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .subnav-label {
+    display: none;
+  }
+
+  .subnav-pill {
+    padding: 5px 8px;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Domain page */
+  .search {
+    display: none;
+  }
+
+  .back-to-top-btn {
+    width: auto;
+  }
+
+  .pipeline-diagram {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .pipeline-node {
+    justify-content: center;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .pipeline-arrow {
+    transform: rotate(90deg);
+    align-self: center;
+  }
+
+  .pipeline-loopback {
+    width: 90%;
+  }
+}
+
+/* ---------- Small Phones (max-width: 400px) ---------- */
+@media (max-width: 400px) {
+  .container {
+    padding-inline: 1rem;
+  }
+
+  .hero-title {
+    font-size: 1.75rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .team-avatars-grid {
+    gap: 1rem;
+  }
+
+  .avatar-circle {
+    width: 64px;
+    height: 64px;
+  }
+
+  .overview-card,
+  .stat-card {
+    padding: 1.25rem;
+  }
+}

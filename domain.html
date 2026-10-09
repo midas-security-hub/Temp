@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NeuroShell Domain — Literature Survey, Research Gap, Objectives, Methodology and Technologies.">
+  <title>Domain — NeuroShell Cybersecurity SaaS</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="domain-page">
+
+  <!-- Main Top Header -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html" aria-label="NeuroShell Homepage">
+        <svg class="brand-logo-icon" width="36" height="36" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 4C14.4772 4 10 8.47715 10 14C10 15.65 10.4042 17.2057 11.1197 18.5714C8.6791 19.8829 7 22.4925 7 25.5C7 29.6421 10.3579 33 14.5 33C15.6457 33 16.731 32.7431 17.7027 32.2826C18.4239 32.8837 19.3496 33.25 20.3571 33.25C22.014 33.25 23.4475 32.2598 24.0893 30.8393C25.0487 31.5772 26.2483 32 27.5 32C30.5376 32 33 29.5376 33 26.5C33 24.8153 32.2415 23.308 31.0456 22.2981C32.2599 21.0373 33 19.3541 33 17.5C33 13.3579 29.6421 10 25.5 10C24.8436 10 24.212 10.0843 23.6116 10.2417C22.6105 6.5501 19.2435 4 20 4Z" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M15 14C15 14 17 11 20 11C23 11 25 14 25 14" stroke="#2563EB" stroke-width="2" stroke-linecap="round"/>
+          <path d="M12 21C14 19 17 20 20 20C23 20 26 19 28 21" stroke="#2563EB" stroke-width="2" stroke-linecap="round"/>
+          <rect x="18" y="22" width="16" height="12" rx="3" fill="#0F172A" stroke="#2563EB" stroke-width="1.5"/>
+          <path d="M21 26L24 28L21 30" stroke="#38BDF8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="26" y1="30" x2="30" y2="30" stroke="#38BDF8" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-text">NEURO<span class="brand-accent">SHELL</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Primary Navigation">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Home</a></li>
+          <li><a class="nav__link active" href="domain.html" aria-current="page">Domain</a></li>
+          <li><a class="nav__link" href="milestones.html">Milestones</a></li>
+          <li><a class="nav__link" href="documents.html">Documents</a></li>
+          <li><a class="nav__link" href="slides.html">Slides</a></li>
+          <li><a class="nav__link" href="about.html">About us</a></li>
+          <li><a class="nav__link" href="contact.html">Contact us</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__tools">
+        <button class="search-btn" aria-label="Search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Domain Hero / Banner Section -->
+    <section class="domain-hero">
+      <div class="hero-grid-bg"></div>
+      <div class="container">
+        <div class="domain-breadcrumb">Home / Domain</div>
+        <h1 class="domain-title">Domain</h1>
+        <p class="domain-subtitle">The research background, problem and approach behind NeuroShell.</p>
+      </div>
+    </section>
+
+    <!-- Main Domain 2-Column Content Layout -->
+    <section class="domain-main-section">
+      <div class="container domain-container">
+        <div class="domain-layout">
+          
+          <!-- Sticky Left Sidebar Navigation -->
+          <aside class="domain-sidebar-wrapper">
+            <div class="domain-sidebar-card">
+              <div class="sidebar-header">On this page</div>
+              <nav class="sidebar-nav">
+                <a href="#literature-survey" class="sidebar-link active">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                  </svg>
+                  Literature Survey
+                </a>
+                <a href="#research-gap" class="sidebar-link">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                  </svg>
+                  Research Gap
+                </a>
+                <a href="#research-problem" class="sidebar-link">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                  </svg>
+                  Research Problem
+                </a>
+                <a href="#research-objectives" class="sidebar-link">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <circle cx="12" cy="12" r="6"></circle>
+                    <circle cx="12" cy="12" r="2"></circle>
+                  </svg>
+                  Research Objectives
+                </a>
+                <a href="#methodology" class="sidebar-link">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                  </svg>
+                  Methodology
+                </a>
+                <a href="#technologies-used" class="sidebar-link">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                    <path d="M21 19c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  </svg>
+                  Technologies Used
+                </a>
+              </nav>
+            </div>
+          </aside>
+
+          <!-- Right Content Column -->
+          <div class="domain-content">
+            
+            <!-- Section 1: Literature Survey -->
+            <section id="literature-survey" class="domain-block">
+              <h2 class="domain-block-title">1. LITERATURE SURVEY</h2>
+              <p class="domain-block-sub">Existing autonomous penetration-testing frameworks compared with NeuroShell.</p>
+
+              <!-- Comparison Table -->
+              <div class="table-responsive-wrap">
+                <table class="domain-table">
+                  <thead>
+                    <tr>
+                      <th class="col-cap">Capability</th>
+                      <th>PentestGPT</th>
+                      <th>xOffense</th>
+                      <th>VulnBot</th>
+                      <th class="col-neuroshell">NeuroShell</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Dedicated NLU preprocessing layer</td>
+                      <td class="col-cross">&#10005;</td>
+                      <td class="col-cross">&#10005;</td>
+                      <td class="col-cross">&#10005;</td>
+                      <td class="col-check-neuroshell">&#10003;</td>
+                    </tr>
+                    <tr>
+                      <td>Autonomous error recovery (self-healing)</td>
+                      <td class="col-cross">&#10005;</td>
+                      <td class="col-cross">&#10005;</td>
+                      <td class="col-cross">&#10005;</td>
+                      <td class="col-check-neuroshell">&#10003;</td>
+                    </tr>
+                    <tr>
+                      <td>Retrieval-grounded command planning (RAG over Kali docs)</td>
+                      <td class="col-cross">&#10005;</td>
+                      <td class="col-cross">&#10005;</td>
+                      <td class="col-cross">&#10005;</td>
+                      <td class="col-check-neuroshell">&#10003;</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- References Box -->
+              <div class="references-box">
+                <div class="references-header">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                  </svg>
+                  References
+                </div>
+                <div class="references-list">
+                  <div class="ref-item">
+                    <span class="ref-label">[Reference 1]</span>
+                    <span class="ref-bar"></span>
+                  </div>
+                  <div class="ref-item">
+                    <span class="ref-label">[Reference 2]</span>
+                    <span class="ref-bar"></span>
+                  </div>
+                  <div class="ref-item">
+                    <span class="ref-label">[Reference 3]</span>
+                    <span class="ref-bar"></span>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Section 2: Research Gap -->
+            <section id="research-gap" class="domain-block">
+              <h2 class="domain-block-title">2. RESEARCH GAP</h2>
+              <div class="alert-box alert-box--gap">
+                <div class="alert-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 18h6"></path>
+                    <path d="M10 22h4"></path>
+                    <path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path>
+                  </svg>
+                </div>
+                <div class="alert-text">
+                  No existing framework (PentestGPT, xOffense, VulnBot) includes an architecturally isolated NLU preprocessing layer with formal validation guarantees.
+                </div>
+              </div>
+            </section>
+
+            <!-- Section 3: Research Problem -->
+            <section id="research-problem" class="domain-block">
+              <h2 class="domain-block-title">3. RESEARCH PROBLEM</h2>
+              <p class="domain-block-sub">Penetration testing workflows remain heavily manual and time-consuming, while global attack surfaces expand exponentially, creating a dangerous execution gap for security teams.</p>
+
+              <div class="problem-cards-grid">
+                <!-- Card 01 -->
+                <article class="prob-card prob-card--blue">
+                  <div class="prob-card__head">
+                    <span class="prob-badge badge--blue">01</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    </svg>
+                  </div>
+                  <h3 class="prob-card__title">Raw commands reach planners unchecked</h3>
+                  <p class="prob-card__text">Hallucination, semantic ambiguity and prompt injection.</p>
+                </article>
+
+                <!-- Card 02 -->
+                <article class="prob-card prob-card--teal">
+                  <div class="prob-card__head">
+                    <span class="prob-badge badge--teal">02</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0D9488" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="3"></circle>
+                      <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                    </svg>
+                  </div>
+                  <h3 class="prob-card__title">Unreliable command generation</h3>
+                  <p class="prob-card__text">Static templates and unrestricted LLM output produce inaccurate, unsafe commands.</p>
+                </article>
+
+                <!-- Card 03 -->
+                <article class="prob-card prob-card--emerald">
+                  <div class="prob-card__head">
+                    <span class="prob-badge badge--emerald">03</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                      <path d="M6 8l4 4-4 4"></path>
+                      <path d="M12 16h6"></path>
+                    </svg>
+                  </div>
+                  <h3 class="prob-card__title">Failures stop the pipeline</h3>
+                  <p class="prob-card__text">A failed command waits for a human operator.</p>
+                </article>
+
+                <!-- Card 04 -->
+                <article class="prob-card prob-card--amber">
+                  <div class="prob-card__head">
+                    <span class="prob-badge badge--amber">04</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg>
+                  </div>
+                  <h3 class="prob-card__title">Too many false alarms</h3>
+                  <p class="prob-card__text">CVSS-only scoring buries the findings that matter.</p>
+                </article>
+              </div>
+            </section>
+
+            <!-- Section 4: Research Objectives -->
+            <section id="research-objectives" class="domain-block">
+              <h2 class="domain-block-title">4. RESEARCH OBJECTIVES</h2>
+              
+              <!-- Objective Banner -->
+              <div class="alert-box alert-box--objective">
+                <div class="alert-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <circle cx="12" cy="12" r="6"></circle>
+                    <circle cx="12" cy="12" r="2"></circle>
+                  </svg>
+                </div>
+                <div class="alert-text">
+                  Improve the reliability and safety of AI in offensive-security workflows, from natural-language intent to prioritized findings.
+                </div>
+              </div>
+
+              <!-- Objectives List Rows -->
+              <div class="objectives-list">
+                <div class="obj-item">
+                  <span class="obj-badge badge--blue">01</span>
+                  <span class="obj-text">Block hallucinated or ambiguous output before execution through structured outputs and deterministic validation.</span>
+                </div>
+                <div class="obj-item">
+                  <span class="obj-badge badge--teal">02</span>
+                  <span class="obj-text">Ground command generation in real Kali documentation and validate every command before it runs.</span>
+                </div>
+                <div class="obj-item">
+                  <span class="obj-badge badge--emerald">03</span>
+                  <span class="obj-text">Execute safely in Docker sandboxes and recover from terminal errors without human help.</span>
+                </div>
+                <div class="obj-item">
+                  <span class="obj-badge badge--amber">04</span>
+                  <span class="obj-text">Predict real-world exploitability, score risk in context and reduce false positives.</span>
+                </div>
+              </div>
+
+              <!-- Metrics Target Cards Row -->
+              <div class="metrics-row">
+                <div class="metric-pill-card">Schema validity &ge; 98%</div>
+                <div class="metric-pill-card">Recovery success &ge; 80%</div>
+                <div class="metric-pill-card">Recovery time &lt; 10 s</div>
+                <div class="metric-pill-card">Zero dangerous commands executed</div>
+              </div>
+            </section>
+
+            <!-- Section 5: Methodology -->
+            <section id="methodology" class="domain-block">
+              <h2 class="domain-block-title">5. METHODOLOGY</h2>
+
+              <!-- Top Pipeline Diagram -->
+              <div class="methodology-pipeline-wrapper">
+                <div class="methodology-diagram">
+                  <!-- Node 1 -->
+                  <div class="method-node node--blue">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    </svg>
+                    <span>01 Intent Engine</span>
+                  </div>
+
+                  <div class="pipeline-arrow">&rarr;</div>
+
+                  <!-- Node 2 -->
+                  <div class="method-node node--teal">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                      <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                      <path d="M21 19c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                    </svg>
+                    <span>02 Planner &amp; RAG</span>
+                  </div>
+
+                  <div class="pipeline-arrow">&rarr;</div>
+
+                  <!-- Node 3 -->
+                  <div class="method-node node--emerald">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                      <path d="M6 8l4 4-4 4"></path>
+                    </svg>
+                    <span>03 Adaptive Executor</span>
+                  </div>
+
+                  <div class="pipeline-arrow">&rarr;</div>
+
+                  <!-- Node 4 -->
+                  <div class="method-node node--amber">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg>
+                    <span>04 Vulnerability Triage</span>
+                  </div>
+                </div>
+
+                <!-- Loopback Line -->
+                <div class="pipeline-loopback">
+                  <div class="loopback-line"></div>
+                  <div class="loopback-caption">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="1 4 1 10 7 10"></polyline>
+                      <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+                    </svg>
+                    confirmed findings loop back for validation
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4 Detailed Module Columns Grid -->
+              <div class="methodology-cards-grid">
+                <!-- Column 01: Intent Engine -->
+                <div class="method-card method-card--blue">
+                  <div class="method-card-header header--blue">01 Intent Engine</div>
+                  <ul class="method-sub-list">
+                    <li><span class="sub-num sub-num--blue">01</span> Input Normalizer</li>
+                    <li><span class="sub-num sub-num--blue">02</span> Alias Resolver</li>
+                    <li><span class="sub-num sub-num--blue">03</span> LLM Inference</li>
+                    <li><span class="sub-num sub-num--blue">04</span> JSON Parser</li>
+                    <li><span class="sub-num sub-num--blue">05</span> Schema Validator</li>
+                    <li><span class="sub-num sub-num--blue">06</span> Regex Validator</li>
+                    <li><span class="sub-num sub-num--blue">07</span> Scope Guard</li>
+                  </ul>
+                </div>
+
+                <!-- Column 02: Planner & RAG -->
+                <div class="method-card method-card--teal">
+                  <div class="method-card-header header--teal">02 Planner &amp; RAG</div>
+                  <ul class="method-sub-list">
+                    <li><span class="sub-num sub-num--teal">01</span> Intent JSON</li>
+                    <li><span class="sub-num sub-num--teal">02</span> ChromaDB retrieval of Kali docs</li>
+                    <li><span class="sub-num sub-num--teal">03</span> Command synthesis</li>
+                    <li><span class="sub-num sub-num--teal">04</span> Validation</li>
+                    <li><span class="sub-num sub-num--teal">05</span> Structured JSON</li>
+                  </ul>
+                </div>
+
+                <!-- Column 03: Adaptive Executor -->
+                <div class="method-card method-card--emerald">
+                  <div class="method-card-header header--emerald">03 Adaptive Executor</div>
+                  <ul class="method-sub-list">
+                    <li><span class="sub-num sub-num--emerald">01</span> Execute</li>
+                    <li><span class="sub-num sub-num--emerald">02</span> Detect</li>
+                    <li><span class="sub-num sub-num--emerald">03</span> Diagnose</li>
+                    <li><span class="sub-num sub-num--emerald">04</span> Mutate</li>
+                    <li><span class="sub-num sub-num--emerald">05</span> Retry</li>
+                  </ul>
+                </div>
+
+                <!-- Column 04: Vulnerability Triage -->
+                <div class="method-card method-card--amber">
+                  <div class="method-card-header header--amber">04 Vulnerability Triage</div>
+                  <ul class="method-sub-list">
+                    <li><span class="sub-num sub-num--amber">01</span> Parse scanner output</li>
+                    <li><span class="sub-num sub-num--amber">02</span> Enrich (NVD, CISA KEV, EPSS)</li>
+                    <li><span class="sub-num sub-num--amber">03</span> XGBoost prediction</li>
+                    <li><span class="sub-num sub-num--amber">04</span> Triage and rank</li>
+                    <li><span class="sub-num sub-num--amber">05</span> JSON + Neo4j</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <!-- Section 6: Technologies Used -->
+            <section id="technologies-used" class="domain-block">
+              <h2 class="domain-block-title">6. TECHNOLOGIES USED</h2>
+
+              <div class="tech-grid">
+                <!-- Category 1 -->
+                <div class="tech-col">
+                  <h3 class="tech-col-title">AI &amp; ML</h3>
+                  <div class="tech-pills">
+                    <span class="tech-pill">Gemma 4</span>
+                    <span class="tech-pill">Qwen2</span>
+                    <span class="tech-pill">LoRA fine-tuning</span>
+                    <span class="tech-pill">Ollama</span>
+                    <span class="tech-pill">Sentence Transformers (all-MiniLM-L6-v2)</span>
+                    <span class="tech-pill">XGBoost</span>
+                    <span class="tech-pill">ChromaDB</span>
+                  </div>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="tech-col">
+                  <h3 class="tech-col-title">Backend &amp; data</h3>
+                  <div class="tech-pills">
+                    <span class="tech-pill">Python</span>
+                    <span class="tech-pill">FastAPI</span>
+                    <span class="tech-pill">Pydantic</span>
+                    <span class="tech-pill">SQLite</span>
+                    <span class="tech-pill">Redis</span>
+                    <span class="tech-pill">Neo4j</span>
+                  </div>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="tech-col">
+                  <h3 class="tech-col-title">Security tooling &amp; infrastructure</h3>
+                  <div class="tech-pills">
+                    <span class="tech-pill">Docker</span>
+                    <span class="tech-pill">Kali Linux</span>
+                    <span class="tech-pill">Nmap</span>
+                    <span class="tech-pill">Nikto</span>
+                    <span class="tech-pill">Gobuster</span>
+                  </div>
+                </div>
+
+                <!-- Category 4 -->
+                <div class="tech-col">
+                  <h3 class="tech-col-title">Threat intelligence &amp; datasets</h3>
+                  <div class="tech-pills">
+                    <span class="tech-pill">NVD</span>
+                    <span class="tech-pill">CISA KEV</span>
+                    <span class="tech-pill">EPSS</span>
+                    <span class="tech-pill">Kaggle</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Main Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer-brand-col">
+          <a class="footer-brand" href="index.html">
+            <svg class="brand-logo-icon" width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 4C14.4772 4 10 8.47715 10 14C10 15.65 10.4042 17.2057 11.1197 18.5714C8.6791 19.8829 7 22.4925 7 25.5C7 29.6421 10.3579 33 14.5 33C15.6457 33 16.731 32.7431 17.7027 32.2826C18.4239 32.8837 19.3496 33.25 20.3571 33.25C22.014 33.25 23.4475 32.2598 24.0893 30.8393C25.0487 31.5772 26.2483 32 27.5 32C30.5376 32 33 29.5376 33 26.5C33 24.8153 32.2415 23.308 31.0456 22.2981C32.2599 21.0373 33 19.3541 33 17.5C33 13.3579 29.6421 10 25.5 10C24.8436 10 24.212 10.0843 23.6116 10.2417C22.6105 6.5501 19.2435 4 20 4Z" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="18" y="22" width="16" height="12" rx="3" fill="#0B193C" stroke="#38BDF8" stroke-width="1.5"/>
+              <path d="M21 26L24 28L21 30" stroke="#38BDF8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <line x1="26" y1="30" x2="30" y2="30" stroke="#38BDF8" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <span class="footer-brand-text">NEURO<span class="brand-accent">SHELL</span></span>
+          </a>
+          <p class="footer-desc">An autonomous, natural language-driven orchestration framework for offensive security operations.</p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer__title">Quick Links</h4>
+          <ul class="footer__list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="domain.html">Domain</a></li>
+            <li><a href="milestones.html">Milestones</a></li>
+            <li><a href="documents.html">Documents</a></li>
+            <li><a href="slides.html">Slides</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-info-col">
+          <h4 class="footer__title">Project Info</h4>
+          <ul class="footer-info-list">
+            <li>Group ID: R26-CS-018</li>
+            <li>SLIIT Faculty of Computing</li>
+            <li>B.Sc. (Hons) IT - Cyber Security</li>
+          </ul>
+        </div>
+
+        <div class="footer-contact-col">
+          <h4 class="footer__title">Contact</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              [Email address]
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              [Phone number]
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              [Location]
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span class="copyright-text">&copy; <span data-year>2026</span> NeuroShell &middot; R26-CS-018 &middot; SLIIT Faculty of Computing</span>
+        <button class="back-to-top-btn" aria-label="Back to top">
+          Back to top
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
